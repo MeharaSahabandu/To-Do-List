@@ -6,6 +6,7 @@ const dotenv = require('dotenv');
 const app = express();
 require ("dotenv").config();
 
+const routes= require('./routes/ToDoRoute');
 
 const PORT = process.env.PORT || 8070;
 
@@ -29,6 +30,7 @@ connection.once('open', ()=>{
     console.log("MongoDB connection success !!");
 })
 
+app.use(routes);
 
 app.listen(PORT,()=>{
     console.log(`Server is up and running on port number: ${PORT} !`);
