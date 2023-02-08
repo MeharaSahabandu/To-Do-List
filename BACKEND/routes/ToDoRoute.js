@@ -4,6 +4,6 @@ const { getToDo } = require('../controller/ToDoController');
 const router = Router();
 
 router.get('/', getToDo );
-router.get('/save', saveToDo)
+//router.get('/save', saveToDo)
 
 module.exports = router;
