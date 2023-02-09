@@ -21,3 +21,24 @@ module.exports.saveToDo = async (req, res) => {
 
     res.send(todo);
 }
+
+
+module.exports.updateToDo = async (req, res) => {
+
+    const { id, text } = req.body;
+    ToDoModel
+    .findByIdAndUpdate(id, { text })
+    .then(() => res.send("Updated Successfully"))
+    .catch((err)=>console.log(err))
+
+}
+
+module.exports.deleteToDo = async (req, res) => {
+
+    const { id } = req.body;
+    ToDoModel
+    .findByIdAndDelete(id)
+    .then(() => res.send("Deleted Successfully"))
+    .catch((err)=>console.log(err))
+
+}

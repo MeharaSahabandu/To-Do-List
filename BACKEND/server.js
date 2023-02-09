@@ -24,6 +24,9 @@ mongoose.connect(URL, ()=>{
     useFindAndModify:false;
 });
 
+app.use(express.json());
+app.use(cors());
+
 const connection = mongoose.connection;
 
 connection.once('open', ()=>{
