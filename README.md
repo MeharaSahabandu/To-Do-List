@@ -1,2 +1,3 @@
 # To-Do-List
-MERN
+
+ -This is a simple To-Do List using MERN stack including CRUD operations.
