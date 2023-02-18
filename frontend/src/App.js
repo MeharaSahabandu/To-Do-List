@@ -1,4 +1,5 @@
 import React from 'react';
+import ToDo from './components/ToDo';
 import './index.css';
 
 function App() {
@@ -12,8 +13,15 @@ function App() {
           <br></br>
           <br></br>
 
-          <input className='inputTask' type="text" placeholder="Enter a task" ></input>
-          
+          <div className='top'>
+            <input className='inputTask' type="text" placeholder="Enter a task" />
+            <div className='add'>ADD</div>
+          </div>
+
+          <div className='list'>
+            <ToDo text="Hi"></ToDo>
+          </div>
+
         </center>
       </div>
 

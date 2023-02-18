@@ -36,3 +36,11 @@ h1{
     border-bottom: 1px solid #000;
     font-size: large;
 }
+
+
+.add{
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
