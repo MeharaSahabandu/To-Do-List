@@ -3,15 +3,23 @@ import ToDo from './components/ToDo';
 import './index.css';
 import { useState } from 'react';
 import { getAllToDo } from './utils/HandleApi';
+import axios from 'axios';
 
 
 function App() {
 
   const [toDo, setToDo] = useState([]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     getAllToDo(setToDo);
-  }, []);
+  }, []);*/
+
+  useEffect(() => {
+    axios.get('http://localhost:8070/')
+      .then((getData) => {
+        setToDo(getData.data);
+      })
+  })
 
 
 
@@ -30,8 +38,8 @@ function App() {
             <div className='add'>ADD</div>
           </div>
 
-          <div className='list'>
-            <ToDo text="Task 1" />
+          <div >
+            {toDo.map((item) => <ToDo key={item._id} text={item.text} />)}
           </div>
 
         </center>

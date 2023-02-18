@@ -7,14 +7,11 @@ let ToDo = require("../models/ToDoModel");
 router.route("/add").post((req, res) => {
 
     const title = req.body.title;
-    const description = req.body.description;
-    const date = req.body.date;
+
 
 
     const newToDo = new ToDo({
         title,
-        description,
-        date
 
     })
 
@@ -63,11 +60,11 @@ router.route("/update/:id").put(async (req, res) => {
 
     let tID = req.params.id;
 
-    const { title, description } = req.body;
+    const { title } = req.body;
 
     const updateToDo = {
         title,
-        description
+        
 
     }
 
