@@ -21,3 +21,18 @@ h1{
     text-align: center;
 }
 
+.top{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.inputTask{
+    border: none;
+    outline: none;
+    width: 400px;
+    padding: 0.5rem ;
+    border-bottom: 1px solid #000;
+    font-size: large;
+}
