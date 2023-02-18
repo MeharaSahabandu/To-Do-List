@@ -19,7 +19,9 @@ function App() {
           </div>
 
           <div className='list'>
-            <ToDo text="Hi"></ToDo>
+            <ToDo text="Hi"/>
+            <ToDo text="Hi"/>
+            <ToDo text="Hi"/>
           </div>
 
         </center>

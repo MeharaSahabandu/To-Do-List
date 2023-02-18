@@ -44,3 +44,27 @@ h1{
     padding: 0.5rem 1.5rem;
     cursor: pointer;
 }
+
+.todo{
+    position:  relative;
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+}
+
+.icons{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    display: flex;
+    gap: 0.5rem;
+    transform: translateY(-50%);
+}
+
+.icon{
+    cursor: pointer;
+    font-size: 20px;
+}
+
