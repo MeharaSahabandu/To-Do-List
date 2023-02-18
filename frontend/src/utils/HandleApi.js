@@ -1,4 +1,5 @@
 import axios from 'axios';
+import '../index.css';
 
 const baseUrl = 'http://localhost:8070'
 

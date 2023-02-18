@@ -13,6 +13,8 @@ function App() {
     getAllToDo(setToDo);
   }, []);
 
+
+
   return (
     <div className="App">
 
@@ -29,9 +31,7 @@ function App() {
           </div>
 
           <div className='list'>
-
-            {toDo.map((item) => <ToDo key={item._id} text={item.text} />)}
-
+            <ToDo text="Task 1" />
           </div>
 
         </center>
